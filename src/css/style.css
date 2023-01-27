@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
+
+body {
+    background-color: rgb(46, 46, 46);
+}
+
+.waves {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    bottom:0;
+    z-index: 999;
+}
+
+.waves svg {
+    position: relative;
+    display: block;
+    width: calc(122% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.waves .shape-fill {
+    fill: #b5fca0;
+}
+

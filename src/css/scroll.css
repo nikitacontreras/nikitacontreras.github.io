@@ -1,0 +1,77 @@
+.container {
+    height: 100%;
+    /* font-size: 100px; */
+}
+
+.row {
+    align-items: center;
+    height: 100%;
+}
+
+.s-one {
+    text-align: center;
+    color: white;
+    background-color: rgb(46, 46, 46);
+    background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
+    mask-image: linear-gradient(to top, transparent 0%, rgb(255, 255, 255) 30%);
+}
+
+.s-one h1{
+    font-weight:bolder;
+}
+
+
+.s-one h1,
+h3 {
+    
+    font-family: "Roboto Mono", sans-serif;
+    z-index: 900;
+}
+
+.s-two {
+    color: white;
+    background-color: rgb(46, 46, 46);
+}
+
+.s-three {
+    color: white;
+    background-color: rgb(46, 46, 46);
+}
+
+.s-four {
+    color: white;
+    background-color: rgb(46, 46, 46);
+}
+
+.scroll-control {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateX(-50%);
+    z-index: 420;
+}
+
+
+
+.scroll-control span {
+    cursor: pointer;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255,0.7);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    opacity: 0.7;
+}
+
+.scroll-control span:hover {
+    opacity: 1;
+}
+
+@media all and (max-width:1023px) {
+    .scroll-control span {
+        display: none;
+    }
+}
