@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css"
         integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/scroll.css">
     <link rel="stylesheet" href="src/css/menu-bar.css">
+    <link rel="stylesheet" href="src/css/portfolio.css">
     <link rel="stylesheet" href="src/css/typewriter.css">
     <link rel="stylesheet" href="src/css/circular-progress.bar.css">
+
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
@@ -33,10 +36,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script
         src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@1.1.9/dist/circularProgressBar.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
     <script src="src/js/title.js"></script>
     <script src="src/js/scroll.js"></script>
     <script src="src/js/typewriter.js"></script>
     <!-- <script src="src/js/audio-api.js"></script> -->
+    <script src="src/js/portfolio.js"></script>
     <script src="src/js/circular-progress-bar.js"></script>
 
 </head>
@@ -91,10 +96,17 @@
             </div>
         </div>
         <div class="waves">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
             </svg>
         </div>
     </section>
@@ -102,57 +114,143 @@
     <section class="scroll s-two" data-section-name="s-two">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-sm">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div>
+
+                            <div class="card" style="border-radius: 15px;" data-bs-theme="dark">
+                                <div class="card-body text-center">
+                                    <div class="mt-3 mb-4">
+                                        <img src="src/img/me.jpg" class="rounded-circle img-fluid"
+                                            style="width: 100px;" />
+                                    </div>
+                                    <p class="mb-2">I'm a 20yrs developer from Colombia, who has been working
+                                        since a long time with both front and backend, i've worked with the Colombian
+                                        TIC's Ministery, to develop educational games to kids on both rural and city
+                                        zones, also developing API's, making app integrations, maintaining multiple
+                                        VPS/Servers and developing microservices for apps.
+                                        </h4>
+                                    <p class="text-muted mb-4">@nikcontre <span class="mx-2">|</span> <a href="#!"
+                                            style="text-decoration: none;">gallery! :)</a></p>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        Launch demo modal
+                                    </button>
+                                    <modal>
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLabel" bis_skin_checked="1"
+                                            style="display: none;" aria-hidden="true">
+                                            <div class="modal-dialog" role="document" bis_skin_checked="1">
+                                                <div class="modal-content" bis_skin_checked="1">
+                                                    <div class="modal-header" bis_skin_checked="1">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                        <button type="button" class="btn" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body" bis_skin_checked="1">
+                                                        <img src="assets/confused_travolta.gif" class="img-fluid">
+                                                    </div>
+                                                    <div class="modal-footer" bis_skin_checked="1">
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save
+                                                            changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </modal>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
                     <table class="table">
                         <tbody>
-                            <tr>
-                                <td>
-                                    <div class="pie" data-pie='{ "percent": 80 , "unit":"css"}'></div>
-                                </td>
-                                <td>
-                                    <div class="pie" data-pie='{ "percent": 80 }'></div>
-                                </td>
-                                <td>
-                                    <div class="pie" data-pie='{ "percent": 80 }'></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="pie" data-pie='{ "percent": 80 }'></div>
-                                </td>
-                                <td>
-                                    <div class="pie" data-pie='{ "percent": 80 }'></div>
-                                </td>
-                                <td>
-                                    <div class="pie" data-pie='{ "percent": 80 }'></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="pie" data-pie='{ "percent": 80 }'></div>
-                                </td>
-                                <td>
-                                    <div class="pie" data-pie='{ "percent": 80 }'></div>
-                                </td>
-                                <td>
-                                    <div class="pie" data-pie='{ "percent": 80 }'></div>
-                                </td>
-                            </tr>
+                            <div class="col">
+                                <tr>
+                                    <td>
+                                        <div class="pie" data-pie='{ "percent": 70 }'>
+                                            <i class="devicon-csharp-plain"></i> C#
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="pie" data-pie='{ "percent": 80 }'>
+                                            <i class="devicon-php-plain"></i> PHP
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="pie" data-pie='{ "percent": 65 }'>
+                                            <i class="devicon-python-plain"></i> Python
+                                        </div>
+                                    </td>
+                                </tr>
+                            </div>
+                            <div class="col">
+                                <tr>
+                                    <td>
+                                        <div class="pie" data-pie='{ "percent": 60 }'>
+                                            <i class="devicon-javascript-plain"></i> JS
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="pie" data-pie='{ "percent": 95 }'>
+                                            <i class="devicon-linux-plain"></i> Linux
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="pie" data-pie='{ "percent": 50 }'>
+                                            <i class="devicon-mysql-plain"></i> SQL
+                                        </div>
+                                    </td>
+                                </tr>
+                            </div>
+                            <div class="col">
+                                <tr>
+                                    <td>
+                                        <div class="pie" data-pie='{ "percent": 35 }'>
+                                            <i class="devicon-arduino-plain"></i> Arduino
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="pie" data-pie='{ "percent": 80 }'>
+                                            <i class="devicon-cplusplus-plain">
+                                            </i> .NET/Core
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="pie" data-pie='{ "percent": 35 }'><i
+                                                class="devicon-cplusplus-plain"></i> C++
+                                        </div>
+                                    </td>
+                                </tr>
+                            </div>
                         </tbody>
                     </table>
                 </div>
-                <div class="col">
 
-                </div>
             </div>
-        </div>
     </section>
 
     <section class="scroll s-three" data-section-name="s-three">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Section THREE</p>
+                    <div class="row">
+                        <div id="portfolio-tabs" class="col-4">
+                            <div class="list-group" id="list-tab" role="tablist">
+                            </div>
+                        </div>
+                        <div id="portfolio-content" class="col-8">
+                            <div class="tab-content" id="nav-tabContent">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

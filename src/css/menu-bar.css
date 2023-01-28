@@ -26,37 +26,39 @@
     text-align: right;
 }
 
-.socials a{
+.socials a {
     padding-right: 0.7em;
 }
 
 .tabulated {
     display: inline;
-    color:whitesmoke;
-    cursor:pointer;
+    color: whitesmoke;
+    cursor: pointer;
 }
+
 @media (max-width: 480px) {
     .menu-bar a {
         font-size: 12px;
     }
-  }
+}
 
 .tabulated a {
-    padding-left:5px;
-    padding-right:10px;
+    padding-left: 5px;
+    padding-right: 10px;
     text-decoration: underline;
-}
-.tabulated a:hover{
-    padding-left:5px;
-    padding-right:10px;
-    text-decoration: underline;
-    color:beige;
 }
 
-.br-tab{
-    
-    border-right: .10rem solid whitesmoke; 
+.tabulated a:hover {
+    padding-left: 5px;
+    padding-right: 10px;
+    text-decoration: underline;
+    color: beige;
 }
+
+.br-tab {
+    border-right: .10rem solid whitesmoke;
+}
+
 .tabulated a i {
     color: whitesmoke;
 }

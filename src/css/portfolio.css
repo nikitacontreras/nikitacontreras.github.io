@@ -1,0 +1,12 @@
+.list-group-item{
+    color:whitesmoke;
+    background-color: rgba(20, 20, 20,0.1) !important;
+    border-color:rgb(36, 36, 36) !important
+}
+.list-group-item:hover{
+    color:white;
+    background-color: rgb(50,50,50) !important;
+}
+.list-group-item.active{
+    border-color:rgb(163, 163, 163) !important;
+}

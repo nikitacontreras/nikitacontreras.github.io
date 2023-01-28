@@ -10,6 +10,7 @@ $(document).ready(() => {
         "cut": 30,
         "speed":144,
         "strokeBottom": 7,
+        "size": 100,
         /* e.t.c */
     }
 
