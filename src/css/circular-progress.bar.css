@@ -1,21 +1,22 @@
 .pie {
-    color:whitesmoke;
+    color: whitesmoke;
     height: 10px;
     width: auto;
     position: relative;
     border-radius: 50%;
     text-align: center;
     justify-content: center;
-    margin:auto;
-    display:block;
+    margin: auto;
+    display: block;
 }
 
-.table tr{
-    filter:blur(100%);
-    border-color:none !important;
-    border-style:none !important;
-} 
-.table td{
+.table tr {
+    filter: blur(100%);
+    border-color: none !important;
+    border-style: none !important;
+}
+
+.table td {
     justify-content: center;
-    text-align:center;
+    text-align: center;
 }

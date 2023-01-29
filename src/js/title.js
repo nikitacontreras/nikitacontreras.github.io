@@ -55,6 +55,36 @@ let options = [
     "agache pa que me lo bese",
     "tia paola"
 ]
+
+function fnBrowserDetect() {
+
+    let userAgent = navigator.userAgent;
+    let browserName;
+
+    if (userAgent.match(/chrome|chromium|crios/i)) {
+        options.push("huh, using chrome? funny")
+    } else if (userAgent.match(/firefox|fxios/i)) {
+        options.push("who even uses firefox nowadays?")
+    } else if (userAgent.match(/safari/i)) {
+        options.push("safari? u a fancy person")
+    } else if (userAgent.match(/opr\//i)) {
+        options.push("wtf is opera 💀")
+    } else if (userAgent.match(/edg/i)) {
+        if (["Win32", "Win64"].indexOf(navigator.platform) >= 0) {
+            options.push("at least u're using edge on win")
+        } else if (["MacIntel", "Mac"].indexOf(navigator.platform) >= 0) {
+            options.push("why are u using edge on mac")
+        } else if (["Linux x64_64"].indexOf(navigator.platform) >= 0) {
+            options.push("WHO EVEN USES EDGE ON LINUX??!?!??!?!?")
+        }
+
+    } else {
+        options.push("are u checking this site on curl? huh")
+    }
+}
+
+fnBrowserDetect()
+
 let option = Math.floor(Math.random() * (1 + options.length - 1 - 0)) + 0
 
 document.title = "nikita | " + options[option]

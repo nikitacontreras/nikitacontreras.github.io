@@ -6,6 +6,7 @@ body {
 }
 
 .waves {
+    -webkit-position: relative;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -14,7 +15,6 @@ body {
     line-height: 0;
     transform: rotate(180deg);
     bottom: 0;
-    z-index: 999;
 }
 
 .waves svg {
@@ -34,10 +34,12 @@ body {
         display: none;
     }
 }
-.card h4{
-    color:whitesmoke;
-    
+
+.card h4 {
+    color: whitesmoke;
+
 }
-.card{
-    background-color:rgb(53, 53, 53) !important;
+
+.card {
+    background-color: rgb(53, 53, 53) !important;
 }
