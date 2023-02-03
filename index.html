@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css"
         integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="src/css/loader.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/scroll.css">
     <link rel="stylesheet" href="src/css/menu-bar.css">
@@ -37,6 +39,7 @@
     <script
         src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@1.1.9/dist/circularProgressBar.min.js"></script>
     <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
     <script src="src/js/title.js"></script>
     <script src="src/js/scroll.js"></script>
     <script src="src/js/typewriter.js"></script>
@@ -47,6 +50,28 @@
 </head>
 
 <body>
+    <div class="noise"></div>
+    <section class="loader-section">
+        <div class="mosaic-loader">
+            <div class="cell d-0"></div>
+            <div class="cell d-1"></div>
+            <div class="cell d-2"></div>
+            <div class="cell d-3"></div>
+            <div class="cell d-1"></div>
+            <div class="cell d-2"></div>
+            <div class="cell d-3"></div>
+            <div class="cell d-4"></div>
+            <div class="cell d-2"></div>
+            <div class="cell d-3"></div>
+            <div class="cell d-4"></div>
+            <div class="cell d-5"></div>
+            <div class="cell d-3"></div>
+            <div class="cell d-4"></div>
+            <div class="cell d-5"></div>
+            <div class="cell d-6"></div>
+        </div>
+    </section>
+
 
     <div class="scroll-control">
         <span class="one"></span>
@@ -73,7 +98,7 @@
                                 class="fa-brands fa-instagram"></i></a>
                         <a href="http://linkedin.com/in/nikitastrike" target="_blank" rel="noopener noreferrer"><i
                                 class="fa-brands fa-linkedin"></i></a>
-                        <a href="mailto:info@inferport.com" target="_blank" rel="noopener noreferrer"><i
+                        <a href="mailto:nicolas.contreras@inferport.com" target="_blank" rel="noopener noreferrer"><i
                                 class="fa-solid fa-envelope"></i></a>
                         <a href="tel:573236123894" target="_blank" rel="noopener noreferrer"><i
                                 class="fa-solid fa-phone"></i></a>
@@ -84,13 +109,13 @@
         </div>
     </div>
 
-    <section class="scroll s-one" data-section-name="s-one">
+    <section class="scroll start" data-section-name="start">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="s-one-bg">
+                    <div class="start-bg">
                     </div>
-                    <h1>nicolás contreras</h1>
+                    <h1 id="nameTitle">nicolás contreras</h1>
                     <h3 class="typewriter">fullstack developer</h3>
                 </div>
             </div>
@@ -111,7 +136,7 @@
         </div>
     </section>
 
-    <section class="scroll s-two" data-section-name="s-two">
+    <section class="scroll about-me" data-section-name="about-me">
         <div class="container">
             <div class="row">
                 <div class="col-sm">
@@ -125,43 +150,22 @@
                                             style="width: 100px;" />
                                     </div>
                                     <p class="mb-2">I'm a 20yrs developer from Colombia, who has been working
-                                        since a long time with both front and backend, i've worked with the Colombian
+                                        since a long time with both front and backend, i've worked with the
+                                        Colombian
                                         TIC's Ministery, to develop educational games to kids on both rural and city
                                         zones, also developing API's, making app integrations, maintaining multiple
                                         VPS/Servers and developing microservices for apps.
                                         </h4>
                                     <p class="text-muted mb-4">@nikcontre <span class="mx-2">|</span> <a href="#!"
                                             style="text-decoration: none;">gallery! :)</a></p>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#exampleModal">
-                                        Launch demo modal
-                                    </button>
-                                    <modal>
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                                            aria-labelledby="exampleModalLabel" bis_skin_checked="1"
-                                            style="display: none;" aria-hidden="true">
-                                            <div class="modal-dialog" role="document" bis_skin_checked="1">
-                                                <div class="modal-content" bis_skin_checked="1">
-                                                    <div class="modal-header" bis_skin_checked="1">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                        <button type="button" class="btn" data-dismiss="modal"
-                                                            aria-label="Close">
-                                                            <span aria-hidden="true">×</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body" bis_skin_checked="1">
-                                                        <img src="assets/confused_travolta.gif" class="img-fluid">
-                                                    </div>
-                                                    <div class="modal-footer" bis_skin_checked="1">
-                                                        <button type="button" class="btn btn-primary"
-                                                            data-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save
-                                                            changes</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </modal>
+                                    <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        my projects
+                                    </a>
+                                    <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                                        data-toggle="lightbox">
+                                        my music
+                                    </a>
+                                    <!-- projects -->
                                 </div>
                             </div>
 
@@ -236,31 +240,37 @@
             </div>
     </section>
 
-    <section class="scroll s-three" data-section-name="s-three">
+    <section class="scroll portfolio" data-section-name="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col col-md-12 col-sm-4">
                     <div class="row">
-                        <div id="portfolio-tabs" class="col-4">
+                        <div id="portfolio-tabs">
                             <div class="list-group" id="list-tab" role="tablist">
                             </div>
                         </div>
-                        <div id="portfolio-content" class="col-8">
+                    </div>
+                </div>
+                <div class="col col-md-12 col-sm-8">
+                    <div class="row">
+                        <div id="portfolio-content">
                             <div class="tab-content" id="nav-tabContent">
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="scroll s-four" data-section-name="s-four">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Section FOUR</p>
+    <section class="scroll contact-me" data-section-name="contact-me">
+        <div class="backdrop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="btn btn-dark" id="sendContactEmail"><i class="fa-solid fa-paper-plane"></i> hmu ;)
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

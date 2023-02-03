@@ -8,9 +8,13 @@ fetch('src/json/portfolio.json')
     })
 */
 
-
+$(document).on("click", "#sendContactEmail", function () {
+    window.location = "mailto:nicolas.contreras@inferport.com?subject=i%20just%20saw%20your%20portfolio&body=Hey%20Nicol%C3%A1s%2C%20my%20name%20is%20_____%2C%20and%20i%20would%20like%20to%20make%20a%20job%20offer%20for%20you. "
+})
 
 $(document).ready(() => {
+
+
 
     $.getJSON("src/json/portfolio.json", function (json) {
         portfolioContents = json;
@@ -18,6 +22,7 @@ $(document).ready(() => {
         const jobs = () => {
 
             portfolioContents.jobs.forEach(job => {
+
                 var navLink = document.createElement("a")
                 var divTab = document.createElement("div")
                 var divContent = document.createElement("div")
@@ -49,9 +54,38 @@ $(document).ready(() => {
                 divContent.classList.add("container")
                 divTab.appendChild(divContent)
 
+
+
+
                 document.getElementById("list-tab").appendChild(navLink)
                 document.getElementById("nav-tabContent").appendChild(divTab)
-            });
+
+                $("#list-" + stylizedName + "-content").append([
+                    $('<div/>', { "class": "card text-center shadow-lg m-3" }).append([
+                        $('<div/>', { "class": "card-header" }).append([
+                            $('<ul/>', { "class": "nav nav-pills card-header-pills window" }).append([
+                                $('<li/>', { "class": "nav-item window-btns" }).append([
+                                    $('<span/>', { "class": "window-close" })
+                                ]),
+                                $('<li/>', { "class": "nav-item window-btns" }).append([
+                                    $('<span/>', { "class": "window-minimize" })
+                                ]),
+                                $('<li/>', { "class": "nav-item window-btns" }).append([
+                                    $('<span/>', { "class": "window-maximize" })
+                                ]),
+                                $('<li/>', { "class": "window-tltle" }).append([
+                                    $('<h6/>').text(job.name)
+                                ]),
+                            ]),
+
+                        ]),
+                        $('<a/>', { "href": job.website, "target": "_blank" }).append([
+                            $('<img/>', { "class": "card-img-top portfolio-bg-img", 'src': job.bg_img })
+                        ])
+                    ])
+                ])
+
+            })
         }
 
 
@@ -59,31 +93,6 @@ $(document).ready(() => {
         fnBrowserDetect()
     })
 
-    function fnBrowserDetect() {
 
-        let userAgent = navigator.userAgent;
-        let browserName;
-
-        if (userAgent.match(/chrome|chromium|crios/i)) {
-            options.push("huh, using chrome? funny")
-        } else if (userAgent.match(/firefox|fxios/i)) {
-            options.push("who even uses firefox nowadays?")
-        } else if (userAgent.match(/safari/i)) {
-            options.push("safari? u a fancy person")
-        } else if (userAgent.match(/opr\//i)) {
-            options.push("wtf is opera 💀")
-        } else if (userAgent.match(/edg/i)) {
-            if (["Win32", "Win64"].indexOf(navigator.platform) >= 0) {
-                options.push("at least u're using edge on win")
-            } else if (["MacIntel", "Mac"].indexOf(navigator.platform) >= 0) {
-                options.push("why are u using edge on mac")
-            } else if (["Linux x64_64"].indexOf(navigator.platform) >= 0) {
-                options.push("WHO EVEN USES EDGE ON LINUX??!?!??!?!?")
-            }
-
-        } else {
-            options.push("are u checking this site on curl? huh")
-        }
-    }
 
 })

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 
-
 body {
     background-color: rgb(46, 46, 46);
 }
@@ -26,7 +25,7 @@ body {
 }
 
 .waves .shape-fill {
-    fill: #b5fca0;
+    fill: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 1) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);;
 }
 
 @media (max-width: 480px) {

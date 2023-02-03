@@ -16,37 +16,37 @@ $(document).ready(() => {
     })
 
     $(".scroll-control .one").click(function () {
-        $.scrollify.move("#s-one")
+        $.scrollify.move("#start")
     })
 
     $(".scroll-control .two").click(function () {
-        $.scrollify.move("#s-two")
+        $.scrollify.move("#about-me")
     })
 
     $(".scroll-control .three").click(function () {
-        $.scrollify.move("#s-three")
+        $.scrollify.move("#portfolio")
     })
 
     $(".scroll-control .four").click(function () {
-        $.scrollify.move("#s-four")
+        $.scrollify.move("#contact-me")
     })
 
     //menulink buttons 
 
     $("#start").click(function () {
-        $.scrollify.move("#s-one")
+        $.scrollify.move("#start")
     })
 
     $("#about_me").click(function () {
-        $.scrollify.move("#s-two")
+        $.scrollify.move("#about-me")
     })
 
     $("#projects").click(function () {
-        $.scrollify.move("#s-three")
+        $.scrollify.move("#portfolio")
     })
 
     $("#contact").click(function () {
-        $.scrollify.move("#s-four")
+        $.scrollify.move("#contact-me")
     })
 
 })

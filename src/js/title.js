@@ -57,10 +57,10 @@ let options = [
 ]
 
 function fnBrowserDetect() {
-
+    
     let userAgent = navigator.userAgent;
     let browserName;
-
+    
     if (userAgent.match(/chrome|chromium|crios/i)) {
         options.push("huh, using chrome? funny")
     } else if (userAgent.match(/firefox|fxios/i)) {
@@ -77,7 +77,7 @@ function fnBrowserDetect() {
         } else if (["Linux x64_64"].indexOf(navigator.platform) >= 0) {
             options.push("WHO EVEN USES EDGE ON LINUX??!?!??!?!?")
         }
-
+        
     } else {
         options.push("are u checking this site on curl? huh")
     }
@@ -90,5 +90,7 @@ let option = Math.floor(Math.random() * (1 + options.length - 1 - 0)) + 0
 document.title = "nikita | " + options[option]
 
 $(document).ready(() => {
+    $("#nameTitle").addClass("animate__animated animate__fadeInDown animate__delay-0.5s").fadeIn()
+    $(".loader-section").fadeOut()
     //document.querySelector("h1").innerText = options[option]
 })

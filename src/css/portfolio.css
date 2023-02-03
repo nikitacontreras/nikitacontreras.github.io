@@ -12,3 +12,84 @@
 .list-group-item.active {
     border-color: rgb(163, 163, 163) !important;
 }
+
+.portfolio-bg-img {
+    -webkit-filter: grayscale(1000%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    object-fit: cover;
+    height: auto;
+    transition: all .25s ease;
+}
+
+.portfolio-bg-img:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition: all .25s ease;
+}
+
+.window-close {
+    height: 1rem;
+    width: 1rem;
+    background-color: rgb(233, 84, 84);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.window-close:hover {
+    background-color: rgb(236, 121, 121);
+}
+
+.window-close:active {
+    background-color: rgb(189, 57, 57);
+}
+
+.window-minimize {
+    height: 1rem;
+    width: 1rem;
+    background-color: rgb(233, 198, 84);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.window-minimize:hover {
+    background-color: rgb(241, 214, 123);
+}
+
+.window-minimize:active {
+    background-color: rgb(214, 174, 40);
+}
+
+.window-maximize {
+    height: 1rem;
+    width: 1rem;
+    background-color: rgb(102, 233, 84);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.window-maximize:hover {
+    background-color: rgb(136, 219, 125);
+}
+
+.window-maximize:active {
+    background-color: rgb(102, 199, 89);
+}
+
+.window {
+    text-align: center;
+}
+
+.window-btns {
+    padding-right: .3rem;
+}
+
+.window-tltle {
+    display: inline-block !important;
+    margin: auto !important;
+}
+
+.window-title h6 {
+    font-size: 12px;
+}

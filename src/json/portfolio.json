@@ -3,7 +3,7 @@
         {
             "name": "Epico",
             "logo": 0,
-            "bg_img": "src/img/ggl.jpg",
+            "bg_img": "src/img/epico-1366x768.png",
             "job_since": "2020-12-28",
             "job_to": 0,
             "description": "Making API Integrations with Epico POS, leading VPN and VPS services, developing both Backend and Frontend for the APP",
@@ -13,7 +13,7 @@
         {
             "name": "Genius Games Latam",
             "logo": 0,
-            "bg_img": "src/img/ggl.jpg",
+            "bg_img": "src/img/ggl-1366x768.png",
             "job_since": "2012-04-01",
             "job_to": "2019-06-15",
             "description": "",
