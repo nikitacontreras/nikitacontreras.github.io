@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("root.css");
+@import url("cdn.css");
+@import url("scrollbar.css");
+@import url("typewritter.css");
+@import url("sections.css");
+@import url("menubar.css");
+@import url("portfolio.css");
+
+body{
+    background-color: var(--bg-default);
+}
+.content {
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+}
+
+.row {
+    align-items: center;
+    height: 100%;
+}
+
+.content>section {
+    scroll-snap-align: start;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+.contact {
+    background-color: var(--bg-contact) !important;
+}
+
+

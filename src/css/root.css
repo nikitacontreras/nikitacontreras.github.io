@@ -1,0 +1,7 @@
+:root {
+    --bg-default: rgb(61, 61, 61);
+    --bg-home: rgb(44, 44, 44);
+    --bg-about: rgb(44, 44, 44);
+    --bg-projects: rgb(41, 41, 41);
+    --bg-contact: rgb(108, 143, 207);
+}

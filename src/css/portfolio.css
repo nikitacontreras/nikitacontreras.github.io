@@ -93,3 +93,16 @@
 .window-title h6 {
     font-size: 12px;
 }
+
+#contact {
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(10, 10, 10);
+}
+
+#contact .backdrop {
+    height: inherit;
+    width: inherit;
+}

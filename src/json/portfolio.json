@@ -20,5 +20,27 @@
             "website": "https://geniusgameslatam.jimdofree.com/trayectoria/",
             "technologies": ["html","css","unity3d","js","godot","cordova","wordpress","mysql"]
         }
+    ],
+    "projects": [
+        {
+            "title": "MGPS",
+            "description": "MGPS es una servidor privado para mundo gaturro hecho con ingenieria inversa al cliente SWF",
+            "url": "https://github.com/nikitacontreras/mgps"
+        },
+        {
+            "title": "UniverPlus-AR",
+            "description": "Aplicación dinámica de R.A. hecha con three.js, ar.js en Node.js",
+            "url": "https://github.com/InferPort/univerplus-ar"
+        },
+        {
+            "title": "Litio",
+            "description": "League of Legends LCU-API wrapper",
+            "url": "https://github.com/nikitacontreras/litio"
+        },
+        {
+            "title": "Roomie",
+            "description": "ROM analyzer for major consoles (NDS,GBA,GB,SNES...)",
+            "url": "https://github.com/nikitacontreras/roomie"
+        }
     ]
 }

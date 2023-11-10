@@ -1,0 +1,48 @@
+#home {
+    text-align: center;
+    color: white;
+    background-color: var(--bg-default);
+
+    -webkit-background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 6px);
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, rgba(255, 255, 255, 1) 30%);
+
+    background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
+    mask-image: linear-gradient(to top, transparent 0%, rgba(255, 255, 255, 0.25) 30%);
+}
+
+
+#home h1 {
+    font-weight: bolder;
+}
+
+
+#home h1,
+h3 {
+    font-family: "Roboto Mono", sans-serif;
+    z-index: 900;
+}
+
+.waves {
+    -webkit-position: relative;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    bottom: 0;
+}
+
+.waves svg {
+    position: relative;
+    display: block;
+    width: calc(122% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.waves .shape-fill {
+    fill: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 1) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+}
